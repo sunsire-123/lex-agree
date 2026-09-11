@@ -1,0 +1,127 @@
+/* File: src/components/LegalDocPreview.css */
+
+.legal-doc-container {
+    font-family: "Times New Roman", serif;
+    line-height: 1.6;
+    color: #000;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.legal-doc-container h1, 
+.legal-doc-container h2, 
+.legal-doc-container h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.legal-doc-container h1 {
+    font-size: 18pt;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.legal-doc-container h2 {
+    font-size: 14pt;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.legal-doc-container h3 {
+    font-size: 12pt;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.legal-doc-container p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.party-block {
+    margin-bottom: 25px;
+    border-left: 4px solid #ddd;
+    padding-left: 15px;
+}
+
+.recital-list, .clause-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.recital-list li, .clause-list li {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.recital-label, .clause-number {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.legal-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 11pt;
+}
+
+.legal-table, .legal-table th, .legal-table td {
+    border: 1px solid #000;
+}
+
+.legal-table th, .legal-table td {
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.legal-table th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.signature-section {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.signature-block {
+    width: 45%;
+    margin-bottom: 40px;
+}
+
+.signature-line {
+    border-top: 1px solid #000;
+    margin-top: 40px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+.center-bold {
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.placeholder {
+    background-color: #ffffcc; 
+    padding: 0 5px;
+}
+
+@media print {
+    .legal-doc-container {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
+    .placeholder {
+        background-color: transparent;
+    }
+}
